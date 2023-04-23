@@ -1,4 +1,4 @@
-# Population characteristics dataset  
+# 1 - Population
 
 Population characteristics of the Human Phenotype Project study participants including birth month and year, sex and visits information.
 
