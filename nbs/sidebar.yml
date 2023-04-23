@@ -8,3 +8,4 @@ website:
       - section: "Datasets"
         contents:
           - datasets/1-population.ipynb
+          - datasets/2-anthropometrics.md
