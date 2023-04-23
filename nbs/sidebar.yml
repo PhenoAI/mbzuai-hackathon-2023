@@ -7,5 +7,6 @@ website:
       - platform_tutorial.ipynb
       - section: "Datasets"
         contents:
-          - datasets/1-population.ipynb
+          - datasets/1-population.md
           - datasets/2-anthropometrics.md
+          - datasets/3-fundus.md
