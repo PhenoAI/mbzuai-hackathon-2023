@@ -1,10 +1,10 @@
 website:
   sidebar:
+    style: "docked"
+    search: true
     contents:
       - index.ipynb
-      - section: Platform tutorial
+      - platform_tutorial.ipynb
+      - section: "Datasets"
         contents:
-          - platform_tutorial.ipynb
-      - section: Datasets
-        contents:
-          - 1-population.ipynb
+          - datasets/1-population.ipynb

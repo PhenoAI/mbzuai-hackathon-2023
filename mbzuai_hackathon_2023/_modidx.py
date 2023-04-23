@@ -5,4 +5,5 @@ d = { 'settings': { 'branch': 'main',
                 'doc_host': 'https://pheno-ai.github.io',
                 'git_url': 'https://github.com/pheno-ai/mbzuai-hackathon-2023',
                 'lib_path': 'mbzuai_hackathon_2023'},
-  'syms': {'mbzuai_hackathon_2023.core': {'mbzuai_hackathon_2023.core.foo': ('core.html#foo', 'mbzuai_hackathon_2023/core.py')}}}
+  'syms': { 'mbzuai_hackathon_2023.core': { 'mbzuai_hackathon_2023.core.foo': ( 'platform_tutorial.html#foo',
+                                                                                'mbzuai_hackathon_2023/core.py')}}}
