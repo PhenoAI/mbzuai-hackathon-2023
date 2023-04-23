@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "mbzuai-hackathon-2023"
+  site-url: "https://pheno-ai.github.io/mbzuai-hackathon-2023"
+  description: "Public repository for MBZUAI Pheno HPP hackathon 2023"
+  repo-branch: main
+  repo-url: "https://github.com/pheno-ai/mbzuai-hackathon-2023"
