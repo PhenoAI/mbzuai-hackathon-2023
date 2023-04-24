@@ -1,4 +1,4 @@
-# 2 - Anthropometrics  
+# Anthropometrics dataset  
 
 Anthropometrics is the study of the measurement of the human body in terms of the size, weight, and proportions of its various parts.
 Anthropometrics is an important tool in the field of medicine, as it allows for the assessment of a person's health and nutritional status, as well as the identification of potential health risks.

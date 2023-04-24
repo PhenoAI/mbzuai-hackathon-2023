@@ -1,4 +1,4 @@
-# 3 - Fundus images
+# Fundus images dataset  
 
 Fundus imaging allows for the visualization of the interior surface of the eye, known as the fundus; and used to examine structures such as the optic disc, retina, and retinal microvasculature. This procedure is commonly used to diagnose and monitor a variety of eye diseases.
 
