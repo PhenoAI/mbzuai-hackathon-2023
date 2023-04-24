@@ -28,4 +28,3 @@ website:
           - datasets/17-cgm.md
           - datasets/21-medical_conditions.md
           - datasets/22-bone_density.md
-       - [Pheno-utils](https://github.com/hrossman/pheno-utils)
