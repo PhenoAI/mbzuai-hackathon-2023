@@ -5,6 +5,7 @@ website:
     collapse-level: 1
     contents:
       - index.ipynb
+      - schedule.md
       - platform_tutorial.md
       - faq.md
       - pheno_utils.md
