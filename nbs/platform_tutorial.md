@@ -1,19 +1,5 @@
 ﻿# Trusted Research Environment User Guide
 
-- Getting Started
-  - Sign Up
-  - Login
-  - User Interface
-- Using Trusted Research Environment
-  - Launching a new Research Environment
-  - Connecting to an Existing Research Environment
-  - Attach Files to a Research Environment
-  - Collaborating and Sharing Data Between Environments
-  - Terminating a Research Environment
-- Tools Installation
-  - Installing Python Packages
-  - Installing Linux Packages
-
 Trusted Research Environment (TRE) is a cloud solution that provides secure access to data, tooling, and compute power that researchers need. Researchers can focus on achieving research missions and completing essential work in minutes in a trusted research environment.
 
 # Getting Started
