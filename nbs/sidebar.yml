@@ -4,7 +4,7 @@ website:
     search: true
     contents:
       - index.ipynb
-      - platform_tutorial.ipynb
+      - platform_tutorial.md
       - section: "Datasets"
         contents:
           - datasets/1-population.md
