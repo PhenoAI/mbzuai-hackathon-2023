@@ -16,9 +16,9 @@
 
 Trusted Research Environment (TRE) is a cloud solution that provides secure access to data, tooling, and compute power that researchers need. Researchers can focus on achieving research missions and completing essential work in minutes in a trusted research environment.
 
-<a name="_page0_x0.00_y273.08"></a> # Getting Started
+# Getting Started
 
-<a name="_page0_x0.00_y297.30"></a> ## Sign Up
+## Sign Up
 
 Use this section if this is your first time connecting to the system.
 
@@ -33,7 +33,7 @@ Use this section if this is your first time connecting to the system.
 
 4. Click the **Sign up** button.
 
-<a name="_page1_x0.00_y477.71"></a> ## Login
+## Login
 
 1. Open your browser and navigate to the TRE URL.
 1. Type in your **Username** (the email you used to sign up) and your **Password.**
@@ -41,7 +41,7 @@ Use this section if this is your first time connecting to the system.
 
 ![](platform_imgs/Aspose.Words.eb2aa5b5-7f63-4203-881b-2ae5083537c6.001.png)
 
-<a name="_page2_x0.00_y385.50"></a> ## User Interface
+## User Interface
 
 ![](platform_imgs/Aspose.Words.eb2aa5b5-7f63-4203-881b-2ae5083537c6.003.png)
 
@@ -53,9 +53,9 @@ Use this section if this is your first time connecting to the system.
 
 **Workspaces** - The combination of a study with a compute![](platform_imgs/Aspose.Words.eb2aa5b5-7f63-4203-881b-2ae5083537c6.004.png)
 
-<a name="_page3_x0.00_y120.15"></a> # Using Trusted Research Environment
+# Using Trusted Research Environment
 
-<a name="_page3_x0.00_y144.37"></a> ## Launching a new Research Environment
+## Launching a new Research Environment
 
 A user can select a Study or multiple Studies and launch a Workspace to access and analyze data. To launch a Research Environment, follow these steps:
 
@@ -86,7 +86,7 @@ This will deploy the new Workspace and attach the Studies that were selected. Yo
 
 ![](platform_imgs/Aspose.Words.eb2aa5b5-7f63-4203-881b-2ae5083537c6.007.jpeg)
 
-<a name="_page4_x0.00_y391.91"></a> ## Connecting to an Existing Research Environment
+## Connecting to an Existing Research Environment
 
 1. In the portal navigate to the **Workspaces** page using the menu on the left.
 1. Click on the **Connections** button, below the **Workspace** name.
@@ -121,7 +121,7 @@ This will deploy the new Workspace and attach the Studies that were selected. Yo
 
 ![](platform_imgs/Aspose.Words.eb2aa5b5-7f63-4203-881b-2ae5083537c6.015.jpeg)
 
-<a name="_page7_x0.00_y455.85"></a> ## Attach Files to a Research Environment
+## Attach Files to a Research Environment
 
 **Create a Study**
 
@@ -150,7 +150,7 @@ This will deploy the new Workspace and attach the Studies that were selected. Yo
 1. Navigate to the **Studies** page using the menu on the left.
 1. Mark the **Study** checkbox and follow the instruction on creating a new Research Environment .
 
-<a name="_page8_x0.00_y519.30"></a> ## Collaborating and Sharing Data Between Environments
+## Collaborating and Sharing Data Between Environments
 
 TODO
 
@@ -166,9 +166,9 @@ When you no longer need a Research Environment you can terminate it. Follow thes
 
 ![](platform_imgs/Aspose.Words.eb2aa5b5-7f63-4203-881b-2ae5083537c6.008.jpeg)
 
-<a name="_page9_x0.00_y322.84"></a> # Tools Installation
+# Tools Installation
 
-<a name="_page9_x0.00_y347.06"></a> ## Installing Python Packages TODO
+## Installing Python Packages TODO
 
 Installing Linux Packages
 
