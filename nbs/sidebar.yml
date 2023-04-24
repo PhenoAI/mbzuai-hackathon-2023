@@ -6,6 +6,8 @@ website:
     contents:
       - index.ipynb
       - platform_tutorial.md
+      - faq.md
+      - pheno_utils.md
       - section: "Datasets"
         contents:
           - datasets.md
