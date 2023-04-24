@@ -1,4 +1,4 @@
-# Liver ultrasound dataset  
+# 4 - liver ultrasound
 
 Liver ultrasound was performed using the Supersonic Aixplorer MACH 30 (Hologic, USA).  The Supersonic Imagine Aixplorer is an ultrasound device that is able to measure the liver's stiffness, viscosity, attenuation and sound speed to diagnose and monitor liver conditions such as steatosis, fibrosis and inflammation. The device uses several ultrasound-based measures, including Speed of Sound (SSp.PLUS), Attenuation Index (Att.PLUS), Viscosity (Vi.PLUS) and Elasticity (Two-Dimensional ShareWave Elastography (2D-SWE)) to evaluate the liver and improve diagnosis performance. These measurements have been shown to be correlated to different stages of liver conditions.
 

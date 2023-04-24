@@ -1,4 +1,4 @@
-# Medical conditions dataset  
+# 21 - medical conditions
 
 The The Human Phenotype Project study medical conditions diagnosis data is based on self reported, participant provided information. Self-reported medical diagnosis are coded according to the WHO International Classification of Diseases 11th Revision (ICD-11) codes.
 

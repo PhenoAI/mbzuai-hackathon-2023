@@ -1,4 +1,4 @@
-# Body composition (DXA) dataset  
+# 11 - body composition
 
 Body composition was profiled based on DXA (dual-energy x-ray absorptiometry) imaging, and includes measurements of fat and lean mass for the legs, arms, trunk, gynoid, and android, as well as measurements of total scan visceral adipose tissue (VAT) and subcutaneous adipose tissue (SAT) area, mass and volume are included.
 

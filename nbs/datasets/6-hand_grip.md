@@ -1,4 +1,4 @@
-# Hand grip strength dataset  
+# 6 - hand grip
 Hand grip strength (HGS) is an effective marker of general health in middle age and older adulthood. Grip strength is measured by squeezing a type of muscle strength testing equipment, known as a dynamometer.
 
 HGS is a measure of the maximum force that an individual can exert with their hand. It is a widely used measure of muscular strength. HGS is an easy and quick measure to obtain.

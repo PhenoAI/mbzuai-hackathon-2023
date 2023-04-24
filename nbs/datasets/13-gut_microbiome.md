@@ -1,4 +1,4 @@
-# Gut microbiome dataset  
+# 13 - gut microbiome
 
 Metagenomics is the study of genetic material from environmental samples, including microbial communities. It involves sequencing the DNA of all microorganisms in the sample, rather than isolating individual organisms. Metagenomics enables the identification and functional analysis of microorganisms in diverse environments, including soil, water, and the human body.
 

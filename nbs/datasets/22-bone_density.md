@@ -1,4 +1,4 @@
-# Bone size, mineral and density (DXA) dataset  
+# 22 - bone density
 
 Bone density was profiled based on DXA imaging, and includes measurements of mineral content in different parts of a variety of skeletal components.
 
