@@ -112,16 +112,16 @@ This will deploy the new Workspace and attach the Studies that were selected. Yo
 **Create a Study**
 
 1. Navigate to the **Studies** page using the menu on the left.
-1. Click the **Create Study** button.
+2. Click the **Create Study** button.
 
 ![](platform_imgs/Aspose.Words.eb2aa5b5-7f63-4203-881b-2ae5083537c6.016.jpeg)
 
 3. Provide an ID for the Study in the **ID** field.
 4. Choose either **My Study** or **Organizational Study** as the type of Study you are creating.
-4. Enter a name for the Study in the **Name** field.
-4. Enter a description for the Study in the **Description** field.
-4. Select the **Project** that this Study relates to in the **Project ID** drop down field.
-4. Click the **Create Study** button.
+5. Enter a name for the Study in the **Name** field.
+6. Enter a description for the Study in the **Description** field.
+7. Select the **Project** that this Study relates to in the **Project ID** drop down field.
+8. Click the **Create Study** button.
 
 ![](platform_imgs/Aspose.Words.eb2aa5b5-7f63-4203-881b-2ae5083537c6.017.jpeg)
 
@@ -138,11 +138,17 @@ This will deploy the new Workspace and attach the Studies that were selected. Yo
 
 ## Collaborating and Sharing Data Between Environments
 
-TODO
+1. Connect to the Research Environment and open your Jupyter Notebook (See: Connect to an Existing Research Environment)
+2. Click on Open JupyterLab on the top right. 
+![](platform_imgs/e4d32db7-372f-488a-9919-9083e15e07c4.png)
+3. Click on Terminal under Other.
+![](platform_imgs/bbd18cb5-16cc-4c2f-8f0a-15f385e1d472.png)
+4. Copy the files you want to share to `/efs`
+![](platform_imgs/08d71913-6c86-4898-ad3a-82583590b944.png)
 
-![](platform_imgs/Aspose.Words.eb2aa5b5-7f63-4203-881b-2ae5083537c6.018.png) shared storage - cd /efs inside 2 jupyter notebooks
+All files under /efs will be available for all Research Environments under the project.
 
-Terminating a Research Environment
+## Terminating a Research Environment
 
 When you no longer need a Research Environment you can terminate it. Follow these steps:
 
