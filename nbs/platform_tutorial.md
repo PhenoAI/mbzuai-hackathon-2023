@@ -139,11 +139,14 @@ This will deploy the new Workspace and attach the Studies that were selected. Yo
 ## Collaborating and Sharing Data Between Environments
 
 1. Connect to the Research Environment and open your Jupyter Notebook (See: Connect to an Existing Research Environment)
-2. Click on Open JupyterLab on the top right. 
+2. Click on Open JupyterLab on the top right.
+
 ![](platform_imgs/e4d32db7-372f-488a-9919-9083e15e07c4.png)
 3. Click on Terminal under Other.
+
 ![](platform_imgs/bbd18cb5-16cc-4c2f-8f0a-15f385e1d472.png)
 4. Copy the files you want to share to `/efs`
+
 ![](platform_imgs/08d71913-6c86-4898-ad3a-82583590b944.png)
 
 All files under /efs will be available for all Research Environments under the project.
@@ -152,7 +155,7 @@ All files under /efs will be available for all Research Environments under the p
 
 When you no longer need a Research Environment you can terminate it. Follow these steps:
 
-1. In<a name="_page8_x0.00_y588.94"></a> the portal navigate to the **Workspaces** page using the menu on the left.
+1. In the portal navigate to the **Workspaces** page using the menu on the left.
 1. In the list of Workspaces, find the Workspace that you want to terminate.
 1. Click on the **Terminate** button, the Workspace must be in the **Ready** state to terminate it.
 
@@ -160,8 +163,34 @@ When you no longer need a Research Environment you can terminate it. Follow thes
 
 # Tools Installation
 
-## Installing Python Packages TODO
+## Installing Python Packages
 
-Installing Linux Packages
+1. Connect to the Research Environment and open your Jupyter Notebook (See: Connect to an Existing Research Environment)
+2. Click on Open JupyterLab on the top right.
 
-<a name="_page9_x0.00_y396.60"></a>TODO
+![](platform_imgs/e4d32db7-372f-488a-9919-9083e15e07c4.png)
+3. Click on Terminal under Other.
+
+![](platform_imgs/bbd18cb5-16cc-4c2f-8f0a-15f385e1d472.png)
+
+4. Inside the terminal window, type `sudo -iu ec2-user` to change user.
+
+![](platform_imgs/20b23e62-f88b-45d1-a8b3-1309d36bf31d.png)
+
+5. Inside the terminal window, type `pip3 install <package name>` and hit Enter.
+
+![](platform_imgs/fe654350-ab60-48d5-a2a3-99c9c4493b1c.png)
+
+## Installing Linux Packages
+
+1. Connect to the Research Environment and open your Jupyter Notebook (See: Connect to an Existing Research Environment)
+2. Click on Open JupyterLab on the top right.
+
+![](platform_imgs/e4d32db7-372f-488a-9919-9083e15e07c4.png)
+3. Click on Terminal under Other.
+
+![](platform_imgs/bbd18cb5-16cc-4c2f-8f0a-15f385e1d472.png)
+
+4. Run `sudo yum install -y <package name>` inside the terminal.
+
+![](platform_imgs/99e5f894-e4f7-4b38-b91a-518563d84ce3.png)
