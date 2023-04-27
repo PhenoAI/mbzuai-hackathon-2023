@@ -46,31 +46,28 @@ Use this section if this is your first time connecting to the system.
 A user can select a Study or multiple Studies and launch a Workspace to access and analyze data. To launch a Research Environment, follow these steps:
 
 1. In the portal navigate to the **Studies** page using the menu on the left.
-1. Select the Studies to be attached to the new Workspace.
+1. Select the Studies **MBZUAI Hackathon** and **Group X Shared Folder** to be attached to the new Workspace.
 1. Once you have selected all the Studies you want, click the **Next** button.
 
-![](platform_imgs/Aspose.Words.eb2aa5b5-7f63-4203-881b-2ae5083537c6.005.jpeg)
+![](platform_imgs/pick_studies.png)
 
 4. Choose the type of Workspace you want and click the **Next** button.
 
-![](platform_imgs/Aspose.Words.eb2aa5b5-7f63-4203-881b-2ae5083537c6.006.jpeg)
+![](platform_imgs/select_compute.png)
 
 5. Type a name for the Workspace in the **Name** field.
-5. Select a project that this Workspace will belong to in the **Project ID** drop down field.
-5. Select the **Configuration** type.
-
-Configuration types:
-
-1. **Jupyter Notebook General** - for general usage
-1. **Jupyter Notebook CPU** - CPU intensive
-1. **Jupyter Notebook Memory** - memory optimized
-1. **Jupyter Notebook GPU** - GPU intensive
+5. Select **MBZUAI_DATA** in the **Project ID** drop down field.
+5. Select the **Configuration** type - **Pheno-JupyterNotebook1GPU** or **Pheno-JupyterNotebook4GPU** according to your needs.
 8. Type a description for the Workspace in the **Description** field.
 9. Click the **Create Research Workspace** button.
 
-This will deploy the new Workspace and attach the Studies that were selected. You will automatically be redirected to the Workspaces tab on the portal.
+![](platform_imgs/workspace_form1.png)
+![](platform_imgs/workspace_form2.png)
 
-![](platform_imgs/Aspose.Words.eb2aa5b5-7f63-4203-881b-2ae5083537c6.007.jpeg)
+This will deploy the new Workspace and attach the Studies that were selected. You will automatically be redirected to the Workspaces tab on the portal.
+Wait for the workspace to be **Available**.
+
+![Wait for workspace creation](platform_imgs/wait_for_workspace.png)
 
 ## Connecting to an Existing Research Environment
 
