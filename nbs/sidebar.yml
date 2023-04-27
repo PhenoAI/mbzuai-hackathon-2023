@@ -6,6 +6,7 @@ website:
     contents:
       - index.ipynb
       - schedule.md
+      - leaderboard.md
       - platform_tutorial.md
       - faq.md
       - pheno_utils.md
