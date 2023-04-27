@@ -4,7 +4,7 @@ website:
     search: true
     collapse-level: 1
     contents:
-      - index.ipynb
+      - index.md
       - schedule.md
       - leaderboard.md
       - platform_tutorial.md
