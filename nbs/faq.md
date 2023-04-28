@@ -1,3 +1,5 @@
+# FAQ
+
 1. **Q: How can I upload my own data, code, or model to use on the platform?**  
   	A: To upload your own files and use them on the platform, you can upload them by clicking on the "Upload files" button , which is located on the right side of your "Group X" study name, and upload the files you need.
  	<br>&nbsp;

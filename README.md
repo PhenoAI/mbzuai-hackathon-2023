@@ -17,14 +17,6 @@ forefront of innovation in biomedicine, working with cutting-edge data
 to create solutions that have the potential to improve patient care and
 outcomes.
 
-``` python
-url = "https://free.timeanddate.com/countdown/i8toxb4r/n2/cf100/cm0/cu4/ct0/cs0/ca0/co0/cr0/ss0/cac000/cpc000/pcfff/tcfff/fs400/szw576/szh243/iso2023-05-02T11:30:00"
-width = 576
-height = 243
-
-IFrame(url, width=width, height=height)
-```
-
         <iframe
             width="576"
             height="243"
