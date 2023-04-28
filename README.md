@@ -9,14 +9,6 @@ analytics within healthcare. This hackathon concentrates on employing
 cutting-edge deep phenotype data to develop novel models for disease
 prediction and prevention.
 
-At the hackathon, teams of participants will receive guidance and
-support from mentors and experts. In addition, attendees will have the
-chance to expand their skills, network with peers, and make a tangible
-impact. By participating in the HPP Hackathon, students will be at the
-forefront of innovation in biomedicine, working with cutting-edge data
-to create solutions that have the potential to improve patient care and
-outcomes.
-
         <iframe
             width="576"
             height="243"
@@ -25,3 +17,7 @@ outcomes.
             allowfullscreen
             &#10;        ></iframe>
         
+
+    <img src='./logos/pheno_logo.png' style='height:100px; margin-right: 10px'>
+    <img src='./logos/mbzuai_logo.jpeg' style='height:100px; margin-right: 10px'>
+    <img src='./logos/weizmann_logo.jpeg' style='height:100px'>
