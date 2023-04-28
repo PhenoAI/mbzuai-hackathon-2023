@@ -1,0 +1,34 @@
+website:
+  sidebar:
+    style: "docked"
+    search: true
+    collapse-level: 1
+    contents:
+      - index.ipynb
+      - schedule.md
+      - leaderboard.md
+      - platform_tutorial.md
+      - faq.md
+      - pheno_utils.md
+      - section: "Datasets"
+        contents:
+          - datasets.md
+          - datasets/1-population.md
+          - datasets/2-anthropometrics.md
+          - datasets/3-fundus.md
+          - datasets/4-liver_ultrasound.md
+          - datasets/5-diet_logging.md
+          - datasets/6-hand_grip.md
+          - datasets/7-blood_pressure.md
+          - datasets/8-serum_lipidomics.md
+          - datasets/9-sleep.md
+          - datasets/10-vascular.md
+          - datasets/11-body_composition.md
+          - datasets/12-carotid_ultrasound.md
+          - datasets/13-gut_microbiome.md
+          - datasets/14-human_genetics.md
+          - datasets/15-ecg.md
+          - datasets/16-blood_tests.md
+          - datasets/17-cgm.md
+          - datasets/21-medical_conditions.md
+          - datasets/22-bone_density.md

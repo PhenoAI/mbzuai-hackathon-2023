@@ -1,12 +1,5 @@
 project:
   output-dir: _docs
-  
-  
-format:
-  html:
-    theme: cosmo
-    css: styles.css
-    toc: true
 
 website:
   title: "mbzuai-hackathon-2023"
@@ -14,10 +7,3 @@ website:
   description: "Public repository for MBZUAI Pheno HPP hackathon 2023"
   repo-branch: main
   repo-url: "https://github.com/pheno-ai/mbzuai-hackathon-2023"
-  navbar:
-    background: primary
-    search: true
-  sidebar:
-    style: floating
-
-metadata-files: [nbdev.yml, sidebar.yml]
