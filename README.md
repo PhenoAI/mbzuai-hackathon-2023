@@ -21,3 +21,5 @@ prediction and prevention.
     <img src='./logos/pheno_logo.png' style='height:100px; margin-right: 10px'>
     <img src='./logos/mbzuai_logo.jpeg' style='height:100px; margin-right: 10px'>
     <img src='./logos/weizmann_logo.jpeg' style='height:100px'>
+
+For any questions or help please contact support@pheno.ai
