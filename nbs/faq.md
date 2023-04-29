@@ -1,3 +1,5 @@
+# Frequently Asked Questions  
+
 1. **Q: How can I upload my own data, code, or model to use on the platform?** 
    A: To upload your own files and use them on the platform, go to the console's [Studies page](https://mbzuai.pheno.ai/studies), locate your your "Group X Shared Folder", and click the "Upload Files" button on the right side of study name. You can then upload the files and folders that you need, and they will appear in the shared folder on the platform (`/home/ec2-user/studies/group_x`) to all group members.
    <br>&nbsp;
