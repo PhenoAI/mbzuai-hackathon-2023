@@ -7,6 +7,7 @@ website:
       - index.ipynb
       - schedule.md
       - challenges.md
+      - submission_instructions.ipynb
       - leaderboard.md
       - platform_tutorial.md
       - faq.md
