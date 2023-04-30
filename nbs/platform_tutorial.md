@@ -8,7 +8,7 @@ Trusted Research Environment (TRE) is a cloud solution that provides secure acce
 
 Use this section if this is your first time connecting to the system.
 
-1. Open your browser and navigate to the TRE URL.
+1. Open your browser and navigate to https://mbzuai.pheno.ai
 1. Click on the **Sign up** link.
 
 ![](platform_imgs/Aspose.Words.eb2aa5b5-7f63-4203-881b-2ae5083537c6.001.png)
@@ -21,7 +21,7 @@ Use this section if this is your first time connecting to the system.
 
 ## Login
 
-1. Open your browser and navigate to the TRE URL.
+1. Open your browser and navigate to https://mbzuai.pheno.ai
 1. Type in your **Username** (the email you used to sign up) and your **Password.**
 1. Click the **Sign In** button.
 
@@ -46,7 +46,7 @@ Use this section if this is your first time connecting to the system.
 A user can select a Study or multiple Studies and launch a Workspace to access and analyze data. To launch a Research Environment, follow these steps:
 
 1. In the portal navigate to the **Studies** page using the menu on the left.
-1. Select the Studies **MBZUAI Hackathon** and **Group X Shared Folder** to be attached to the new Workspace.
+1. Select the Studies `MBZUAI Hackathon` and `Group {id} Shared Folder` to be attached to the new Workspace.
 1. Once you have selected all the Studies you want, click the **Next** button.
 
 ![](platform_imgs/pick_studies.png)
@@ -55,34 +55,35 @@ A user can select a Study or multiple Studies and launch a Workspace to access a
 
 ![](platform_imgs/select_compute.png)
 
-5. Type a name for the Workspace in the **Name** field.
-5. Select **MBZUAI_DATA** in the **Project ID** drop down field.
-5. Select the **Configuration** type - **Pheno-JupyterNotebook1GPU** or **Pheno-JupyterNotebook4GPU** according to your needs.
+5. Use this format for the Workspace **Name** field: `group{id}-{full_name}-workspace{num}`. 
+    
+    Example: `group3-hagai_rossman-workspace1`.
+
+5. Select `MBZUAI_DATA` in the **Project ID** drop down field.
+5. Select the **Configuration** type - `Pheno-JupyterNotebook1GPU` or `Pheno-JupyterNotebook4GPU` according to your needs.
 8. Type a description for the Workspace in the **Description** field.
 9. Click the **Create Research Workspace** button.
 
 ![](platform_imgs/workspace_form1.png)
 ![](platform_imgs/workspace_form2.png)
 
-This will deploy the new Workspace and attach the Studies that were selected. You will automatically be redirected to the Workspaces tab on the portal.
-Wait for the workspace to be **Available**.
+This will deploy the new Workspace and attach the Studies that were selected. 
 
-![Wait for workspace creation](platform_imgs/wait_for_workspace.png)
+You will automatically be redirected to the Workspaces tab on the portal.
+
+Wait for the workspace to be **Available**.
 
 ## Connecting to an Existing Research Environment
 
 1. In the portal navigate to the **Workspaces** page using the menu on the left.
 1. Click on the **Connections** button, below the **Workspace** name.
 
-![](platform_imgs/Aspose.Words.eb2aa5b5-7f63-4203-881b-2ae5083537c6.008.jpeg)
+![](platform_imgs/existing_workspace.png)
 
 3. Click on the **Generate URL** button on the right, under HTTP Connections.
-
-![](platform_imgs/Aspose.Words.eb2aa5b5-7f63-4203-881b-2ae5083537c6.009.jpeg)
-
 4. Click on the **Copy icon** to copy the notebook link, and click **Connect.**
 
-![](platform_imgs/Aspose.Words.eb2aa5b5-7f63-4203-881b-2ae5083537c6.010.jpeg)
+![](platform_imgs/Aspose.Words.eb2aa5b5-7f63-4203-881b-2ae5083537c6.010.png)
 
 5. Wait for the system to load.
 
@@ -106,32 +107,11 @@ Wait for the workspace to be **Available**.
 
 ## Attach Files to a Research Environment
 
-**Create a Study**
-
 1. Navigate to the **Studies** page using the menu on the left.
-2. Click the **Create Study** button.
-
-![](platform_imgs/Aspose.Words.eb2aa5b5-7f63-4203-881b-2ae5083537c6.016.jpeg)
-
-3. Provide an ID for the Study in the **ID** field.
-4. Choose either **My Study** or **Organizational Study** as the type of Study you are creating.
-5. Enter a name for the Study in the **Name** field.
-6. Enter a description for the Study in the **Description** field.
-7. Select the **Project** that this Study relates to in the **Project ID** drop down field.
-8. Click the **Create Study** button.
-
-![](platform_imgs/Aspose.Words.eb2aa5b5-7f63-4203-881b-2ae5083537c6.017.jpeg)
-
-**Upload files to a Study**
-
-1. Navigate to the **Studies** page using the menu on the left.
-1. Find the Study on the list and click **Upload Files** on the right.
+1. Find the Study named `Group {id} Shared Folder` on the list and click **Upload Files** on the right.
 1. You can upload files either by dragging and dropping, or by clicking the **Upload Files** or **Upload Folder** button.
 
-**Attach Study to Research Environment**
-
-1. Navigate to the **Studies** page using the menu on the left.
-1. Mark the **Study** checkbox and follow the instruction on creating a new Research Environment .
+![](platform_imgs/upload_files.png)
 
 ## Collaborating and Sharing Data Between Environments
 
