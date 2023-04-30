@@ -1,13 +1,14 @@
-# Frequently Asked Questions  
+# FAQ
 
 1. **Q: How can I upload my own data, code, or model to use on the platform?** 
-   A: To upload your own files and use them on the platform, go to the console's [Studies page](https://mbzuai.pheno.ai/studies), locate your your "Group X Shared Folder", and click the "Upload Files" button on the right side of study name. You can then upload the files and folders that you need, and they will appear in the shared folder on the platform (`/home/ec2-user/studies/group_x`) to all group members.
+   A: To upload your own files and use them on the platform, go to the console's [Studies page](https://mbzuai.pheno.ai/studies), locate your "Group X Shared Folder", and click the "Upload Files" button on the right side of study name. You can then upload the files and folders that you need, and they will appear in the shared folder on the platform (`/home/ec2-user/studies/group_x`) to all group members.
    <br>&nbsp;
 
-   
+
 2. **Q: How do I work on the same code as my group? What is the recommended way of saving code and temporary data??** 
    A: To work on the same code as your group, make sure you have included and selected a "shared" "Group X" study when creating your workspace. Inside the workspace, the shared folder will be located at `/home/ec2-user/studies/group_x`. In Jupyter's file explorer, this will be under `studies/group_x`. All files and code included in this folder will be shared with your group (and only group members will have access to it). When saving code and temporary data, we recommend saving code in outside of the studies folder, and only move them to the shared folder once you'de like to share amongst your peers.
    <br>&nbsp;
+
 
 
 3. **Q: Scrolling is too sensitive on my jupyter notebook. How can I fix it??** 
@@ -22,8 +23,8 @@
    Enable the 3rd option in the drop down list
    <br>&nbsp;
 
-5. **Q: Can I copy text from inside the platform and paste it outside?** 
-   A: No that option is not available.
+5. **Q: Can I copy text from inside the platform and paste it outside?**  
+   A: No, that option is not available.
    <br>&nbsp;
 
 
