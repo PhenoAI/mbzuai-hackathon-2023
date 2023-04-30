@@ -8,7 +8,7 @@ Trusted Research Environment (TRE) is a cloud solution that provides secure acce
 
 Use this section if this is your first time connecting to the system.
 
-1. Open your browser and navigate to https://mbzuai.pheno.ai
+1. Open your browser and navigate to [https://mbzuai.pheno.ai](https://mbzuai.pheno.ai)
 1. Click on the **Sign up** link.
 
 ![](platform_imgs/Aspose.Words.eb2aa5b5-7f63-4203-881b-2ae5083537c6.001.png)
@@ -21,7 +21,7 @@ Use this section if this is your first time connecting to the system.
 
 ## Login
 
-1. Open your browser and navigate to https://mbzuai.pheno.ai
+1. Open your browser and navigate to [https://mbzuai.pheno.ai](https://mbzuai.pheno.ai)
 1. Type in your **Username** (the email you used to sign up) and your **Password.**
 1. Click the **Sign In** button.
 
