@@ -158,16 +158,4 @@ When you no longer need a Research Environment you can terminate it. Follow thes
 
 ![](platform_imgs/fe654350-ab60-48d5-a2a3-99c9c4493b1c.png)
 
-## Installing Linux Packages
-
-1. Connect to the Research Environment and open your Jupyter Notebook (See: Connect to an Existing Research Environment)
-2. Click on Open JupyterLab on the top right.
-
-![](platform_imgs/e4d32db7-372f-488a-9919-9083e15e07c4.png)
-3. Click on Terminal under Other.
-
-![](platform_imgs/bbd18cb5-16cc-4c2f-8f0a-15f385e1d472.png)
-
-4. Run `sudo yum install -y <package name>` inside the terminal.
-
-![](platform_imgs/99e5f894-e4f7-4b38-b91a-518563d84ce3.png)
+### For any questions or help please contact: [support@pheno.ai](support@pheno.ai)

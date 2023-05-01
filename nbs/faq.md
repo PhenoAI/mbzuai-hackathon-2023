@@ -10,7 +10,6 @@
    <br>&nbsp;
 
 
-
 3. **Q: Scrolling is too sensitive on my jupyter notebook. How can I fix it??**  
    A: On Chrome, Go to `chrome://flags` and Enable `Windows Scrolling Personality`.
    <br>&nbsp;
