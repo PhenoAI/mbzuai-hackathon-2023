@@ -4,7 +4,7 @@
 |------|-----------------------------------------------------------|------------------------------|----------------|--------------------|--------------|
 |    1 | [population](datasets/1-population.html)                  | 23,300 (11,179)              | ✓              |                    |              |
 |    2 | [anthropometrics](datasets/2-anthropometrics.html)        | 13,624 (10,812)              | ✓              |                    |              |
-|    3 | [fundus](datasets/3-fundus.html)                          | 7,086 (7,052)                | ✓              |                    |              |
+|    3 | [fundus](datasets/3-fundus.html)                          | 7,086 (7,052)                | ✓              |                    | ✓            |
 |    4 | [liver ultrasound](datasets/4-liver_ultrasound.html)      | 30,542 (8,986)               | ✓              |                    |              |
 |    5 | [diet logging](datasets/5-diet_logging.html)              | 2,650,458 (10,236)           | ✓              | ✓                  |              |
 |    6 | [hand grip](datasets/6-hand_grip.html)                    | 13,624 (10,812)              | ✓              |                    |              |
@@ -21,3 +21,4 @@
 |   17 | [cgm](datasets/17-cgm.html)                               | 10,087 (10,011)              | ✓              | ✓                  |              |
 |   21 | [medical conditions](datasets/21-medical_conditions.html) | 20,530 (9,575)               | ✓              |                    |              |
 |   22 | [bone density](datasets/22-bone_density.html)             | 10,215 (9,261)               | ✓              |                    |              |
+
