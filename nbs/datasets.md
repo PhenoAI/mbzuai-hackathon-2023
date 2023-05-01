@@ -1,3 +1,5 @@
+# Available datasets
+
 |   id | dataset                                                   | data points (participants)   | tabular data   | time series data   | image data   |
 |------|-----------------------------------------------------------|------------------------------|----------------|--------------------|--------------|
 |    1 | [population](datasets/1-population.html)                  | 23,300 (11,179)              | ✓              |                    |              |
