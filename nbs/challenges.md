@@ -22,7 +22,9 @@ Examples of unstructured datasets:
 ## 2. Creative Challenge
 This challenge is an open challenge to find the best application of deep phenotype longitudinal cohorts to promote healthy aging. The output of this challenge is a presentation of a proof-of-concept of such an application using the available data at hand.
 
-User the following template for your presentation: [Presentation template slides](https://docs.google.com/presentation/d/1MXjvLig6ZIgN-6RLjk2FamO4y-XHLNRH/edit?usp=share_link&ouid=117022341077434935776&rtpof=true&sd=true)
+User the following template for your presentation: [Presentation template slides](https://docs.google.com/presentation/d/1MXjvLig6ZIgN-6RLjk2FamO4y-XHLNRH/edit?usp=share_link&ouid=117022341077434935776&rtpof=true&sd=true)  
+
+The presentation should take 6-8 minutes. And another 2 minutes will be given at the end for any questions.  
 
 The presentation should briefly cover:  
 1. Scientific or clinical background and rationale for the application.  
