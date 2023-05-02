@@ -51,17 +51,17 @@ Please do come up with your own ideas!
 ## Challenges deadlines:
 
 ### Day 1 (2/5)
-| Time   | Event                                   |
-|--------|-----------------------------------------|
-| 11:30  | Kickoff teamwork begins                 |
-| 17:30  | Leaderboard submission #1               |
+| Time   | Event                                              |
+|--------|----------------------------------------------------|
+| 11:30  | Kickoff teamwork begins                            |
+| 17:30  | Leaderboard submission #1 (Predictive Challenge)   |
 
 ### Day 2 (3/5)
-| Time   | Event                               |
-|--------|-------------------------------------|
-| 07:30  | Leaderboard submission #2           |
-| 10:30  | Final submission deadline           |
-| 11:00  | Team presentations                  |
+| Time   | Event                                              |
+|--------|----------------------------------------------------|
+| 07:30  | Leaderboard submission #2 (Predictive Challenge)   |
+| 10:30  | Predictive + Creative final submission deadline    |
+| 11:00  | Team presentations (Predictive + Creative)         |
 
 
 ## General notes  
