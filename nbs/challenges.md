@@ -50,13 +50,13 @@ Please do come up with your own ideas!
 
 ## Challenges deadlines:
 
-### Day 1 (1/5)
+### Day 1 (2/5)
 | Time   | Event                                   |
 |--------|-----------------------------------------|
 | 11:30  | Kickoff teamwork begins                 |
 | 17:30  | Leaderboard submission #1               |
 
-### Day 2 (2/5)
+### Day 2 (3/5)
 | Time   | Event                               |
 |--------|-------------------------------------|
 | 07:30  | Leaderboard submission #2           |
