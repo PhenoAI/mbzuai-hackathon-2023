@@ -2,7 +2,7 @@
 
 The Human Phenotype Project MBZUAI Hackathon 2023
 
-## Day 1 (1/5)
+## Day 1 (2/5)
 
 | Time   | Event                                   |
 |--------|-----------------------------------------|
@@ -17,7 +17,7 @@ The Human Phenotype Project MBZUAI Hackathon 2023
 | 18:00  | Dinner                                  |
 | 19:00  | Work continues                          |
 
-## Day 2 (2/5)
+## Day 2 (3/5)
 
 | Time   | Event                               |
 |--------|-------------------------------------|
