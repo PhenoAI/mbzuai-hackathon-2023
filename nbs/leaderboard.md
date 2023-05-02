@@ -1,5 +1,7 @@
 # Leaderboard
 
+(Mean absolute error of age prediction in years)  
+
 |   group |   test01 |
 |---------|----------|
 |       1 |  4.20875 |
