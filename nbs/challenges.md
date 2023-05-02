@@ -33,7 +33,7 @@ Example use cases may include (but not limited to):
 2. Personalized interventions  
 3. Precision medicine  
 4. Biomarker discovery  
-5. Assisting clinical trial   design  
+5. Assisting clinical trial design  
 
 Specific examples (feel free to be creative and come up with your own):  
 1. Omics-mediated glucose-diet personalized response with respect to age. Utilize microbiome, serum metabolomics, and genetics datasets. See for example: [Personalized Nutrition by Prediction of Glycemic Responses](https://www.sciencedirect.com/science/article/pii/S0092867415014816).  
