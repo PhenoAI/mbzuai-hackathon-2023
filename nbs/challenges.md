@@ -7,22 +7,22 @@ Your objective is to forecast an individual's actual chronological age by levera
 
 Submission instructions and format can be found in the `example_notebooks\prediction_example.ipynb` notebook on the platform.
 
-The final score will be composed of:
-- 80%: Leaderboard **rank** on empirical MAE on the test set.
-- 20%: Model novelty and usage of unstructured datasets. This is presented by the groups and **ranked** by the judges.
+The final score will be composed of:  
+- 80%: Leaderboard **rank** on empirical MAE on the test set.  
+- 20%: Model novelty and usage of unstructured datasets. This is presented by the groups and **ranked** by the judges.  
 
-Examples for model novelty:
-- Simple: Vanilla scikit-learn and gradient boosting trees (CatBoost, XGBoost, LightGBM)
-- Complex: Custom models, bespoke probabilistic models, leveraging domain expertise
+Examples for model novelty:  
+- Simple: Vanilla scikit-learn and gradient boosting trees (CatBoost, XGBoost, LightGBM)  
+- Complex: Custom models, bespoke probabilistic models, leveraging domain expertise  
 
-Examples of unstructured datasets:
-- Simple: All tabular features
-- Complex: Images (fundus), time series (sleep monitor, CGM, ECG, diet logging)
+Examples of unstructured datasets:  
+- Simple: All tabular features  
+- Complex: Images (fundus), time series (sleep monitor, CGM, ECG, diet logging)  
 
 ## 2. Creative Challenge
 This challenge is an open challenge to find the best application of deep phenotype longitudinal cohorts to promote healthy aging. The output of this challenge is a presentation of a proof-of-concept of such an application using the available data at hand.
 
-The presentation should briefly cover:
+The presentation should briefly cover:  
 1. Scientific or clinical background and rationale for the application.  
 2. Main idea  
 3. Proof-of-concept of the application on the HPP dataset  
