@@ -115,7 +115,7 @@ Wait for the workspace to be **Available**.
 
 ## Collaborating and Sharing Data Between Environments
 
-A: To work on the same code as your group, make sure you have included and selected a “shared” “Group X” study when creating your workspace. Inside the workspace, the shared folder will be located at /home/ec2-user/studies/group_x. In Jupyter’s file explorer, this will be under studies/group_x. All files and code included in this folder will be shared with your group (and only group members will have access to it). When saving code and temporary data, we recommend saving code in outside of the studies folder, and only move them to the shared folder once you’de like to share amongst your peers. 
+To work on the same code as your group, make sure you have included and selected your “Group X Shared Folder” study when creating your workspace. Inside the workspace, the shared folder will be located at `/home/ec2-user/studies/group_x`. In Jupyter’s file explorer, this will be under `studies/group_x`. All files and code included in this folder will be shared with your group (and only group members will have access to it). When saving code and temporary data, we recommend saving code in outside of the studies folder, and only move them to the shared folder once you’de like to share amongst your peers. 
 
 ## Terminating a Research Environment
 
