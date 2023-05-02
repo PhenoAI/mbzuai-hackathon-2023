@@ -125,7 +125,7 @@ When you no longer need a Research Environment you can terminate it. Follow thes
 1. In the list of Workspaces, find the Workspace that you want to terminate.
 1. Click on the **Terminate** button, the Workspace must be in the **Ready** state to terminate it.
 
-![](platform_imgs/Aspose.Words.eb2aa5b5-7f63-4203-881b-2ae5083537c6.008.jpeg)
+![](platform_imgs/existing_workspace.png)
 
 # Tools Installation
 
