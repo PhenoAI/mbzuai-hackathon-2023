@@ -115,18 +115,7 @@ Wait for the workspace to be **Available**.
 
 ## Collaborating and Sharing Data Between Environments
 
-1. Connect to the Research Environment and open your Jupyter Notebook (See: Connect to an Existing Research Environment)
-2. Click on Open JupyterLab on the top right.
-
-![](platform_imgs/e4d32db7-372f-488a-9919-9083e15e07c4.png)
-3. Click on Terminal under Other.
-
-![](platform_imgs/bbd18cb5-16cc-4c2f-8f0a-15f385e1d472.png)
-4. Copy the files you want to share to `/efs`
-
-![](platform_imgs/08d71913-6c86-4898-ad3a-82583590b944.png)
-
-All files under /efs will be available for all Research Environments under the project.
+A: To work on the same code as your group, make sure you have included and selected a “shared” “Group X” study when creating your workspace. Inside the workspace, the shared folder will be located at /home/ec2-user/studies/group_x. In Jupyter’s file explorer, this will be under studies/group_x. All files and code included in this folder will be shared with your group (and only group members will have access to it). When saving code and temporary data, we recommend saving code in outside of the studies folder, and only move them to the shared folder once you’de like to share amongst your peers. 
 
 ## Terminating a Research Environment
 
