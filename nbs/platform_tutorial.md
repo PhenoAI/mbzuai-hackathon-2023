@@ -146,16 +146,10 @@ When you no longer need a Research Environment you can terminate it. Follow thes
 2. Click on Open JupyterLab on the top right.
 
 ![](platform_imgs/e4d32db7-372f-488a-9919-9083e15e07c4.png)
-3. Click on Terminal under Other.
+3. Open a new Jupyter notebook.
 
 ![](platform_imgs/bbd18cb5-16cc-4c2f-8f0a-15f385e1d472.png)
 
-4. Inside the terminal window, type `sudo -iu ec2-user` to change user.
-
-![](platform_imgs/20b23e62-f88b-45d1-a8b3-1309d36bf31d.png)
-
-5. Inside the terminal window, type `pip3 install <package name>` and hit Enter.
-
-![](platform_imgs/fe654350-ab60-48d5-a2a3-99c9c4493b1c.png)
+4. Inside the one of the notebook cells, type `!pip3 install <package name>`.
 
 ### For any questions or help please contact: [support@pheno.ai](support@pheno.ai)
