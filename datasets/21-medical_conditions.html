@@ -1,0 +1,5692 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.340">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>mbzuai-hackathon-2023 - 21-medical_conditions</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="mbzuai-hackathon-2023 - 21-medical_conditions">
+<meta property="og:description" content="">
+<meta property="og:site-name" content="mbzuai-hackathon-2023">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">mbzuai-hackathon-2023</span>
+    </a>
+  </div>
+        <div class="quarto-navbar-tools ms-auto">
+</div>
+          <div id="quarto-search" class="" title="Search"></div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../datasets.html">Datasets</a></li><li class="breadcrumb-item"><a href="../datasets/21-medical_conditions.html">21-medical_conditions</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HPP Hackathon</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../schedule.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Schedule</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../challenges.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Competition Challenges</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../submission_instructions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Submission instructions</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../leaderboard.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Leaderboard</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../platform_tutorial.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Getting Started</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../faq.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">FAQ</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pheno_utils.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">pheno-utils</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Datasets</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Available datasets</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/1-population.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1-population</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/2-anthropometrics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2-anthropometrics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/3-fundus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3-fundus</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/4-liver_ultrasound.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4-liver_ultrasound</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/5-diet_logging.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5-diet_logging</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/6-hand_grip.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6-hand_grip</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/7-blood_pressure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7-blood_pressure</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/8-serum_lipidomics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">8-serum_lipidomics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/9-sleep.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">9-sleep</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/10-vascular.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">10-vascular</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/11-body_composition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">11-body_composition</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/12-carotid_ultrasound.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">12-carotid_ultrasound</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/13-gut_microbiome.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">13-gut_microbiome</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/14-human_genetics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">14-human_genetics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/15-ecg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">15-ecg</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/16-blood_tests.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">16-blood_tests</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/17-cgm.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">17-cgm</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/21-medical_conditions.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">21-medical_conditions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/22-bone_density.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">22-bone_density</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#medical-conditions" id="toc-medical-conditions" class="nav-link active" data-scroll-target="#medical-conditions">21 - medical conditions</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">21-medical_conditions</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<!-- WARNING: THIS FILE WAS AUTOGENERATED! DO NOT EDIT! -->
+<section id="medical-conditions" class="level1">
+<h1>21 - medical conditions</h1>
+<p>The The Human Phenotype Project study medical conditions diagnosis data is based on self reported, participant provided information. Self-reported medical diagnosis are coded according to the WHO International Classification of Diseases 11th Revision (ICD-11) codes.</p>
+<p>The medical conditions diagnosis information collection in the Human Phenotype Project is based on self reporting of conditions either through direct questions on specific conditions in self filled online questionnaires or through self recall of conditions diagnosis in an interview with a research staff member.</p>
+<p>The information is stored in 1 parquet file: <code>medical_conditions.parquet</code></p>
+<div class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-04-29T16:16:14.916242Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-04-29T16:16:14.916043Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-04-29T16:16:15.848462Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-04-29T16:16:15.847892Z&quot;}" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pheno_utils <span class="im">import</span> PhenoLoader</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-04-29T16:16:15.850906Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-04-29T16:16:15.850769Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-04-29T16:16:20.989309Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-04-29T16:16:20.988476Z&quot;}" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>dl <span class="op">=</span> PhenoLoader(<span class="st">'medical_conditions'</span>, age_sex_dataset<span class="op">=</span><span class="va">None</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>dl</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="3">
+<pre><code>DataLoader for medical_conditions with
+314 fields
+1 tables: ['medical_conditions']</code></pre>
+</div>
+</div>
+<div class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-04-29T16:16:20.992394Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-04-29T16:16:20.991983Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-04-29T16:16:21.045930Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-04-29T16:16:21.045411Z&quot;}" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>dl.<span class="bu">dict</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="4">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">field_string</th>
+<th data-quarto-table-cell-role="th">description_string</th>
+<th data-quarto-table-cell-role="th">parent_dataframe</th>
+<th data-quarto-table-cell-role="th">relative_location</th>
+<th data-quarto-table-cell-role="th">value_type</th>
+<th data-quarto-table-cell-role="th">units</th>
+<th data-quarto-table-cell-role="th">sampling_rate</th>
+<th data-quarto-table-cell-role="th">item_type</th>
+<th data-quarto-table-cell-role="th">array</th>
+<th data-quarto-table-cell-role="th">cohorts</th>
+<th data-quarto-table-cell-role="th">data_type</th>
+<th data-quarto-table-cell-role="th">debut</th>
+<th data-quarto-table-cell-role="th">pandas_dtype</th>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">tabular_field_name</th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">abortion</td>
+<td>Abortion</td>
+<td>Abortion (JA00) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">abscess_of_anal_regions</td>
+<td>Abscess of anal regions</td>
+<td>Abscess of anal regions (DB70.0) reported at t...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">acne</td>
+<td>Acne</td>
+<td>Acne (ED80) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">acquired_hearing_impairment</td>
+<td>Acquired hearing impairment</td>
+<td>Acquired hearing impairment (AB51) reported at...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">acquired_hypothyroidism</td>
+<td>Acquired hypothyroidism</td>
+<td>Acquired hypothyroidism (5A00.2) reported at t...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">acute_inflammatory_demyelinating_polyneuropathy</td>
+<td>Acute inflammatory demyelinating polyneuropathy</td>
+<td>Acute inflammatory demyelinating polyneuropath...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">acute_myocardial_infarction</td>
+<td>Acute myocardial infarction</td>
+<td>Acute myocardial infarction (BA41) reported at...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">acute_pancreatitis</td>
+<td>Acute pancreatitis</td>
+<td>Acute pancreatitis (DC31) reported at time of ...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">adhesive_capsulitis_of_shoulder</td>
+<td>Adhesive capsulitis of shoulder</td>
+<td>Adhesive capsulitis of shoulder (FB53.0) repor...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">adrenocortical_insufficiency</td>
+<td>Adrenocortical insufficiency</td>
+<td>Adrenocortical insufficiency (5A74) reported a...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">allergic_asthma</td>
+<td>Allergic asthma</td>
+<td>Allergic asthma (CA23.0) reported at time of v...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">allergic_contact_dermatitis</td>
+<td>Allergic contact dermatitis</td>
+<td>Allergic contact dermatitis (EK00) reported at...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">allergic_rhinitis</td>
+<td>Allergic rhinitis</td>
+<td>Allergic rhinitis (CA08.0) reported at time of...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">allergic_rhinitis_due_to_house_dust_mite</td>
+<td>Allergic rhinitis due to house dust mite</td>
+<td>Allergic rhinitis due to house dust mite (CA08...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">allergic_rhinitis_due_to_pollen</td>
+<td>Allergic rhinitis due to pollen</td>
+<td>Allergic rhinitis due to pollen (CA08.00) repo...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">alopecia_areata</td>
+<td>Alopecia areata</td>
+<td>Alopecia areata (ED70.2) reported at time of v...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">alpha_thalassaemia</td>
+<td>Alpha thalassaemia</td>
+<td>Alpha thalassaemia (3A50.0) reported at time o...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">anal_fissure</td>
+<td>Anal fissure</td>
+<td>Anal fissure (DB50.0) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">anal_fistula</td>
+<td>Anal fistula</td>
+<td>Anal fistula (DB50.1) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">aneurysm_or_dissection_of_carotid_artery</td>
+<td>Aneurysm or dissection of carotid artery</td>
+<td>Aneurysm or dissection of carotid artery (BD51...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">angina_pectoris</td>
+<td>Angina pectoris</td>
+<td>Angina pectoris (BA40) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">angiomyolipoma</td>
+<td>Angiomyolipoma</td>
+<td>Angiomyolipoma (XH4VB4) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">annular_erythema</td>
+<td>Annular erythema</td>
+<td>Annular erythema (EB11) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">anterior_uveitis</td>
+<td>Anterior uveitis</td>
+<td>Anterior uveitis (9A96) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">aortic_aneurysm_or_dissection</td>
+<td>Aortic aneurysm or dissection</td>
+<td>Aortic aneurysm or dissection (BD50) reported ...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">arterial_aneurysm_or_dissection_excluding_aorta</td>
+<td>Arterial aneurysm or dissection excluding aorta</td>
+<td>Arterial aneurysm or dissection excluding aort...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">asthma</td>
+<td>Asthma</td>
+<td>Asthma (CA23) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">asymptomatic_stenosis_of_intracranial_or_extracranial_artery</td>
+<td>Asymptomatic stenosis of intracranial or extra...</td>
+<td>Asymptomatic stenosis of intracranial or extra...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">atherosclerotic_chronic_arterial_occlusive_disease</td>
+<td>Atherosclerotic chronic arterial occlusive dis...</td>
+<td>Atherosclerotic chronic arterial occlusive dis...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">atopic_eczema</td>
+<td>Atopic eczema</td>
+<td>Atopic eczema (EA80) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">atrial_fibrillation</td>
+<td>Atrial fibrillation</td>
+<td>Atrial fibrillation (BC81.3) reported at time ...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">atrial_premature_depolarization</td>
+<td>Atrial premature depolarization</td>
+<td>Atrial premature depolarization (BC60) reporte...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">atrioventricular_block_first_degree</td>
+<td>Atrioventricular block first degree</td>
+<td>Atrioventricular block first degree (BC63.0) r...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">attention_deficit_hyperactivity_disorder</td>
+<td>Attention deficit hyperactivity disorder</td>
+<td>Attention deficit hyperactivity disorder (6A05...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">barrett_ulcer</td>
+<td>Barrett ulcer</td>
+<td>Barrett ulcer (DA23.2) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">basal_cell_carcinoma_of_skin</td>
+<td>Basal cell carcinoma of skin</td>
+<td>Basal cell carcinoma of skin (2C32) reported a...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">bell_palsy</td>
+<td>Bell palsy</td>
+<td>Bell palsy (8B88.0) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">benign_neoplasm_of_breast</td>
+<td>Benign neoplasm of breast</td>
+<td>Benign neoplasm of breast (2F30) reported at t...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">benign_neoplasm_of_the_large_intestine</td>
+<td>Benign neoplasm of the large intestine</td>
+<td>Benign neoplasm of the large intestine (2E92.4...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">benign_nonmesenchymal_neoplasm_of_uterus_cervix_uteri</td>
+<td>Benign nonmesenchymal neoplasm of uterus cervi...</td>
+<td>Benign nonmesenchymal neoplasm of uterus cervi...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">benign_positional_paroxysmal_vertigo</td>
+<td>Benign positional paroxysmal vertigo</td>
+<td>Benign positional paroxysmal vertigo (AB31.2) ...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">bradycardia_unspecified</td>
+<td>Bradycardia unspecified</td>
+<td>Bradycardia unspecified (MC81.1) reported at t...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">bronchiectasis</td>
+<td>Bronchiectasis</td>
+<td>Bronchiectasis (CA24) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">bronchitis</td>
+<td>Bronchitis</td>
+<td>Bronchitis (CA20) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">bullous_pemphigoid</td>
+<td>Bullous pemphigoid</td>
+<td>Bullous pemphigoid (EB41.0) reported at time o...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">calcific_tendinitis</td>
+<td>Calcific tendinitis</td>
+<td>Calcific tendinitis (FB40.3) reported at time ...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">calculus_of_upper_urinary_tract</td>
+<td>Calculus of upper urinary tract</td>
+<td>Calculus of upper urinary tract (GB70) reporte...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">cardiac_murmurs_and_other_cardiac_sounds</td>
+<td>Cardiac murmurs and other cardiac sounds</td>
+<td>Cardiac murmurs and other cardiac sounds (MC83...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">carpal_tunnel_syndrome</td>
+<td>Carpal tunnel syndrome</td>
+<td>Carpal tunnel syndrome (8C10.0) reported at ti...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">cataract</td>
+<td>Cataract</td>
+<td>Cataract (9B10) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">certain_specified_disorders_of_eyelid</td>
+<td>Certain specified disorders of eyelid</td>
+<td>Certain specified disorders of eyelid (9A06) r...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">cholelithiasis</td>
+<td>Cholelithiasis</td>
+<td>Cholelithiasis (DC11) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">chronic_bronchitis</td>
+<td>Chronic bronchitis</td>
+<td>Chronic bronchitis (CA20.1) reported at time o...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">chronic_hepatitis_b</td>
+<td>Chronic hepatitis B</td>
+<td>Chronic hepatitis B (1E51.0) reported at time ...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">chronic_hepatitis_c</td>
+<td>Chronic hepatitis C</td>
+<td>Chronic hepatitis C (1E51.1) reported at time ...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">chronic_hepatitis_not_elsewhere_classified</td>
+<td>Chronic hepatitis not elsewhere classified</td>
+<td>Chronic hepatitis not elsewhere classified (DB...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">chronic_kidney_disease_stage_unspecified</td>
+<td>Chronic kidney disease stage unspecified</td>
+<td>Chronic kidney disease stage unspecified (GB61...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">chronic_obstructive_pulmonary_disease</td>
+<td>Chronic obstructive pulmonary disease</td>
+<td>Chronic obstructive pulmonary disease (CA22) r...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">chronic_pancreatitis</td>
+<td>Chronic pancreatitis</td>
+<td>Chronic pancreatitis (DC32) reported at time o...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">chronic_rhinosinusitis</td>
+<td>Chronic rhinosinusitis</td>
+<td>Chronic rhinosinusitis (CA0A) reported at time...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">chronic_widespread_pain</td>
+<td>Chronic widespread pain</td>
+<td>Chronic widespread pain (MG30.01) reported at ...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">coeliac_disease</td>
+<td>Coeliac disease</td>
+<td>Coeliac disease (DA95) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">complete_atrioventricular_block</td>
+<td>Complete atrioventricular block</td>
+<td>Complete atrioventricular block (BC63.2) repor...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">conduction_disorders</td>
+<td>Conduction disorders</td>
+<td>Conduction disorders (BC63) reported at time o...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">constipation</td>
+<td>Constipation</td>
+<td>Constipation (ME05.0) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">corneal_scars_or_opacities</td>
+<td>Corneal scars or opacities</td>
+<td>Corneal scars or opacities (9A77) reported at ...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">coronary_atherosclerosis</td>
+<td>Coronary atherosclerosis</td>
+<td>Coronary atherosclerosis (BA80) reported at ti...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">cough</td>
+<td>Cough</td>
+<td>Cough (MD12) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">covid19</td>
+<td>COVID19</td>
+<td>COVID19 (RA01) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">crohn_disease</td>
+<td>Crohn disease</td>
+<td>Crohn disease (DD70) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">cushing_syndrome</td>
+<td>Cushing syndrome</td>
+<td>Cushing syndrome (5A70) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">cyst_of_pancreas</td>
+<td>Cyst of pancreas</td>
+<td>Cyst of pancreas (DC30.0) reported at time of ...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">cystitis</td>
+<td>Cystitis</td>
+<td>Cystitis (GC00) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">degeneration_of_macula_or_posterior_pole</td>
+<td>Degeneration of macula or posterior pole</td>
+<td>Degeneration of macula or posterior pole (9B78...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">degenerative_condition_of_spine_unspecified</td>
+<td>Degenerative condition of spine unspecified</td>
+<td>Degenerative condition of spine unspecified (F...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">deletions_of_the_short_arm_of_chromosome_17</td>
+<td>Deletions of the short arm of chromosome 17</td>
+<td>Deletions of the short arm of chromosome 17 (L...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">dermatophytosis</td>
+<td>Dermatophytosis</td>
+<td>Dermatophytosis (1F28) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">dermatophytosis_of_foot</td>
+<td>Dermatophytosis of foot</td>
+<td>Dermatophytosis of foot (1F28.2) reported at t...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">deviated_nasal_septum</td>
+<td>Deviated nasal septum</td>
+<td>Deviated nasal septum (CA0D) reported at time ...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">diabetes_mellitus_arising_in_pregnancy</td>
+<td>Diabetes mellitus arising in pregnancy</td>
+<td>Diabetes mellitus arising in pregnancy (JA63.2...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">diabetes_mellitus_type_unspecified</td>
+<td>Diabetes mellitus type unspecified</td>
+<td>Diabetes mellitus type unspecified (5A14) repo...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">diaphragmatic_hernia</td>
+<td>Diaphragmatic hernia</td>
+<td>Diaphragmatic hernia (DD50.0) reported at time...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">diffuse_large_bcell_lymphomas</td>
+<td>Diffuse large Bcell lymphomas</td>
+<td>Diffuse large Bcell lymphomas (2A81) reported ...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">diseases_of_liver_unspecified</td>
+<td>Diseases of liver unspecified</td>
+<td>Diseases of liver unspecified (DB9Z) reported ...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">dislocation_or_strain_or_sprain_of_joints_or_ligaments_of_knee</td>
+<td>Dislocation or strain or sprain of joints or l...</td>
+<td>Dislocation or strain or sprain of joints or l...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">disorders_associated_with_tremor</td>
+<td>Disorders associated with tremor</td>
+<td>Disorders associated with tremor (8A04) report...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">disorders_of_iron_metabolism</td>
+<td>Disorders of iron metabolism</td>
+<td>Disorders of iron metabolism (5C64.1) reported...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">disorders_of_purine_metabolism</td>
+<td>Disorders of purine metabolism</td>
+<td>Disorders of purine metabolism (5C55.0) report...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">diverticulitis_of_large_intestine</td>
+<td>Diverticulitis of large intestine</td>
+<td>Diverticulitis of large intestine (DC80) repor...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">diverticulosis_of_unspecified_part_of_intestine</td>
+<td>Diverticulosis of unspecified part of intestine</td>
+<td>Diverticulosis of unspecified part of intestin...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">duodenal_ulcer</td>
+<td>Duodenal ulcer</td>
+<td>Duodenal ulcer (DA63) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">dysthymic_disorder</td>
+<td>Dysthymic disorder</td>
+<td>Dysthymic disorder (6A72) reported at time of ...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">elevated_bloodpressure_reading_without_diagnosis_of_hypertension_unspecified</td>
+<td>Elevated bloodpressure reading without diagnos...</td>
+<td>Elevated bloodpressure reading without diagnos...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">endometriosis</td>
+<td>Endometriosis</td>
+<td>Endometriosis (GA10) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">episodic_vestibular_syndrome</td>
+<td>Episodic vestibular syndrome</td>
+<td>Episodic vestibular syndrome (AB31) reported a...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">essential_hypertension</td>
+<td>Essential hypertension</td>
+<td>Essential hypertension (BA00) reported at time...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">essential_tremor_or_related_tremors</td>
+<td>Essential tremor or related tremors</td>
+<td>Essential tremor or related tremors (8A04.1) r...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">facioscapulohumeral_muscular_dystrophy</td>
+<td>Facioscapulohumeral muscular dystrophy</td>
+<td>Facioscapulohumeral muscular dystrophy (8C70.3...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">familial_mediterranean_fever</td>
+<td>Familial Mediterranean fever</td>
+<td>Familial Mediterranean fever (4A60.0) reported...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">female_infertility</td>
+<td>Female infertility</td>
+<td>Female infertility (GA31) reported at time of ...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">fibrocystic_change</td>
+<td>Fibrocystic change</td>
+<td>Fibrocystic change (GB20.0) reported at time o...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">folate_deficiency</td>
+<td>Folate deficiency</td>
+<td>Folate deficiency (5B5E) reported at time of v...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">food_hypersensitivity</td>
+<td>Food hypersensitivity</td>
+<td>Food hypersensitivity (4A85.2) reported at tim...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">fracture_of_foot_except_ankle</td>
+<td>Fracture of foot except ankle</td>
+<td>Fracture of foot except ankle (ND13) reported ...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">fracture_of_neck</td>
+<td>Fracture of neck</td>
+<td>Fracture of neck (NA22) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">fracture_of_other_specified_part_of_lower_leg_including_ankle</td>
+<td>Fracture of other specified part of lower leg ...</td>
+<td>Fracture of other specified part of lower leg ...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">fracture_of_rib</td>
+<td>Fracture of rib</td>
+<td>Fracture of rib (NA82.3) reported at time of v...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">fracture_of_shoulder_or_upper_arm</td>
+<td>Fracture of shoulder or upper arm</td>
+<td>Fracture of shoulder or upper arm (NC12) repor...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">fracture_of_skull_or_facial_bones</td>
+<td>Fracture of skull or facial bones</td>
+<td>Fracture of skull or facial bones (NA02) repor...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">fracture_of_unspecified_body_region</td>
+<td>Fracture of unspecified body region</td>
+<td>Fracture of unspecified body region (ND56.2) r...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">gastric_ulcer</td>
+<td>Gastric ulcer</td>
+<td>Gastric ulcer (DA60) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">gastritis</td>
+<td>Gastritis</td>
+<td>Gastritis (DA42) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">gastrooesophageal_reflux_disease</td>
+<td>Gastrooesophageal reflux disease</td>
+<td>Gastrooesophageal reflux disease (DA22) report...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">generalised_anxiety_disorder</td>
+<td>Generalised anxiety disorder</td>
+<td>Generalised anxiety disorder (6B00) reported a...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">gilbert_syndrome</td>
+<td>Gilbert syndrome</td>
+<td>Gilbert syndrome (5C58.01) reported at time of...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">glaucoma</td>
+<td>Glaucoma</td>
+<td>Glaucoma (9C61) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">gout</td>
+<td>Gout</td>
+<td>Gout (FA25) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">haemolytic_anaemia_due_to_g6pd_deficiency</td>
+<td>haemolytic anaemia due to G6PD deficiency</td>
+<td>haemolytic anaemia due to G6PD deficiency (3A1...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">haemorrhoids</td>
+<td>Haemorrhoids</td>
+<td>Haemorrhoids (DB60) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">hashimoto_thyroiditis</td>
+<td>Hashimoto thyroiditis</td>
+<td>Hashimoto thyroiditis (5A03.20) reported at ti...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">heart_valve_diseases_unspecified</td>
+<td>Heart valve diseases unspecified</td>
+<td>Heart valve diseases unspecified (BC0Z) report...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">heartburn</td>
+<td>Heartburn</td>
+<td>Heartburn (MD95) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">helicobacter_pylori</td>
+<td>Helicobacter pylori</td>
+<td>Helicobacter pylori (XN3DY) reported at time o...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">helicobacter_pylori_induced_gastritis</td>
+<td>Helicobacter pylori induced gastritis</td>
+<td>Helicobacter pylori induced gastritis (DA42.1)...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">hepatic_cyst</td>
+<td>Hepatic cyst</td>
+<td>Hepatic cyst (DB99.1) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">herpes_simplex_infection_of_genitalia_or_urogenital_tract</td>
+<td>Herpes simplex infection of genitalia or uroge...</td>
+<td>Herpes simplex infection of genitalia or uroge...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">herpes_simplex_infections</td>
+<td>Herpes simplex infections</td>
+<td>Herpes simplex infections (1F00) reported at t...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">horner_syndrome</td>
+<td>Horner syndrome</td>
+<td>Horner syndrome (8D8A.1) reported at time of v...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">human_papillomavirus_1</td>
+<td>Human papillomavirus 1</td>
+<td>Human papillomavirus 1 (XN6LA) reported at tim...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">hyperkalaemia</td>
+<td>Hyperkalaemia</td>
+<td>Hyperkalaemia (5C76) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">hyperlipoproteinaemia</td>
+<td>Hyperlipoproteinaemia</td>
+<td>Hyperlipoproteinaemia (5C80) reported at time ...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">hyperparathyroidism</td>
+<td>Hyperparathyroidism</td>
+<td>Hyperparathyroidism (5A51) reported at time of...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">hyperplasia_of_prostate</td>
+<td>Hyperplasia of prostate</td>
+<td>Hyperplasia of prostate (GA90) reported at tim...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">hyperprolactinaemia</td>
+<td>Hyperprolactinaemia</td>
+<td>Hyperprolactinaemia (5A60.1) reported at time ...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">hypertriglyceridaemia</td>
+<td>Hypertriglyceridaemia</td>
+<td>Hypertriglyceridaemia (5C80.1) reported at tim...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">hypoalphalipoproteinaemia</td>
+<td>Hypoalphalipoproteinaemia</td>
+<td>Hypoalphalipoproteinaemia (5C81) reported at t...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">hypoglycaemia_without_associated_diabetes</td>
+<td>Hypoglycaemia without associated diabetes</td>
+<td>Hypoglycaemia without associated diabetes (5A4...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">hypothyroidism</td>
+<td>hypothyroidism</td>
+<td>hypothyroidism (5A00) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">idiopathic_hypotension</td>
+<td>Idiopathic hypotension</td>
+<td>Idiopathic hypotension (BA20) reported at time...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">iliotibial_band_syndrome</td>
+<td>Iliotibial band syndrome</td>
+<td>Iliotibial band syndrome (FB54.1) reported at ...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">immune_thrombocytopenic_purpura</td>
+<td>Immune thrombocytopenic purpura</td>
+<td>Immune thrombocytopenic purpura (3B64.10) repo...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">infectious_meningitis_not_elsewhere_classified</td>
+<td>Infectious meningitis not elsewhere classified</td>
+<td>Infectious meningitis not elsewhere classified...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">infectious_mononucleosis</td>
+<td>Infectious mononucleosis</td>
+<td>Infectious mononucleosis (1D81) reported at ti...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">inflammatory_and_other_diseases_of_prostate</td>
+<td>Inflammatory and other diseases of prostate</td>
+<td>Inflammatory and other diseases of prostate (G...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">inflammatory_bowel_diseases_unspecified</td>
+<td>Inflammatory bowel diseases unspecified</td>
+<td>Inflammatory bowel diseases unspecified (DD7Z)...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">inflammatory_spondyloarthritis_unspecified</td>
+<td>Inflammatory spondyloarthritis unspecified</td>
+<td>Inflammatory spondyloarthritis unspecified (FA...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">inguinal_hernia</td>
+<td>Inguinal hernia</td>
+<td>Inguinal hernia (DD51) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">injury_of_muscle_fascia_or_tendon_of_long_head_of_biceps</td>
+<td>Injury of muscle fascia or tendon of long head...</td>
+<td>Injury of muscle fascia or tendon of long head...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">injury_of_muscle_or_tendon_of_the_rotator_cuff_of_shoulder</td>
+<td>Injury of muscle or tendon of the rotator cuff...</td>
+<td>Injury of muscle or tendon of the rotator cuff...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">insulinresistance_syndromes</td>
+<td>Insulinresistance syndromes</td>
+<td>Insulinresistance syndromes (5A44) reported at...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">intermediate_hyperglycaemia</td>
+<td>Intermediate hyperglycaemia</td>
+<td>Intermediate hyperglycaemia (5A40) reported at...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">intervertebral_disc_degeneration</td>
+<td>Intervertebral disc degeneration</td>
+<td>Intervertebral disc degeneration (FA80) report...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">intervertebral_disc_degeneration_of_lumbar_spine_with_prolapsed_disc</td>
+<td>Intervertebral disc degeneration of lumbar spi...</td>
+<td>Intervertebral disc degeneration of lumbar spi...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">intracranial_injury_unspecified</td>
+<td>Intracranial injury unspecified</td>
+<td>Intracranial injury unspecified (NA07.Z) repor...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">iron_deficiency</td>
+<td>Iron deficiency</td>
+<td>Iron deficiency (5B5K.0) reported at time of v...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">iron_deficiency_anemia</td>
+<td>Iron Deficiency Anemia</td>
+<td>Iron Deficiency Anemia (3A00) reported at time...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">iron_overload_diseases</td>
+<td>Iron overload diseases</td>
+<td>Iron overload diseases (5C64.10) reported at t...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">irritable_bowel_syndrome</td>
+<td>Irritable bowel syndrome</td>
+<td>Irritable bowel syndrome (DD91.0) reported at ...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">joubert_syndrome</td>
+<td>Joubert syndrome</td>
+<td>Joubert syndrome (LD20.00) reported at time of...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">keratoconjunctivitis_sicca</td>
+<td>Keratoconjunctivitis sicca</td>
+<td>Keratoconjunctivitis sicca (9A79) reported at ...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">keratoconus</td>
+<td>Keratoconus</td>
+<td>Keratoconus (9A78.50) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">kidney_donor</td>
+<td>Kidney donor</td>
+<td>Kidney donor (QB22) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">lactose_intolerance</td>
+<td>Lactose intolerance</td>
+<td>Lactose intolerance (5C61.6) reported at time ...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">left_bundle_branch_block</td>
+<td>Left bundle branch block</td>
+<td>Left bundle branch block (BC63.4) reported at ...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">leiomyoma_of_uterus</td>
+<td>Leiomyoma of uterus</td>
+<td>Leiomyoma of uterus (2E86.0) reported at time ...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">lichen_planus</td>
+<td>Lichen planus</td>
+<td>Lichen planus (EA91) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">lichen_sclerosus</td>
+<td>Lichen sclerosus</td>
+<td>Lichen sclerosus (EB60) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">lipoma</td>
+<td>Lipoma</td>
+<td>Lipoma (2E80.0) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">low_back_pain</td>
+<td>Low back pain</td>
+<td>Low back pain (ME84.2) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">low_bone_mass_disorders</td>
+<td>Low bone mass disorders</td>
+<td>Low bone mass disorders (FB83) reported at tim...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">low_haemoglobin</td>
+<td>Low haemoglobin</td>
+<td>Low haemoglobin (MA18.4) reported at time of v...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">lower_limb_deep_vein_thrombosis</td>
+<td>Lower limb deep vein thrombosis</td>
+<td>Lower limb deep vein thrombosis (BD71.4) repor...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">lupus_erythematosus</td>
+<td>Lupus erythematosus</td>
+<td>Lupus erythematosus (4A40) reported at time of...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">lymphomatoid_papulosis</td>
+<td>Lymphomatoid papulosis</td>
+<td>Lymphomatoid papulosis (2B03.1) reported at ti...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">male_erectile_dysfunction</td>
+<td>Male erectile dysfunction</td>
+<td>Male erectile dysfunction (HA01.1) reported at...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">malignant_neoplasms_of_cervix_uteri</td>
+<td>Malignant neoplasms of cervix uteri</td>
+<td>Malignant neoplasms of cervix uteri (2C77) rep...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">melanoma_of_cornea</td>
+<td>Melanoma of cornea</td>
+<td>Melanoma of cornea (2D01.0) reported at time o...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">melanoma_of_skin</td>
+<td>Melanoma of skin</td>
+<td>Melanoma of skin (2C30) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">meniere_disease</td>
+<td>Meniere disease</td>
+<td>Meniere disease (AB31.0) reported at time of v...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">menopausal_or_certain_specified_perimenopausal_disorders</td>
+<td>Menopausal or certain specified perimenopausal...</td>
+<td>Menopausal or certain specified perimenopausal...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">migraine</td>
+<td>Migraine</td>
+<td>Migraine (8A80) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">mitral_valve_insufficiency</td>
+<td>Mitral valve insufficiency</td>
+<td>Mitral valve insufficiency (BB61) reported at ...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">mitral_valve_prolapse</td>
+<td>Mitral valve prolapse</td>
+<td>Mitral valve prolapse (BB62) reported at time ...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">mixed_connective_tissue_disease</td>
+<td>Mixed connective tissue disease</td>
+<td>Mixed connective tissue disease (4A43.3) repor...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">monoclonal_gammopathy_of_undetermined_significance</td>
+<td>Monoclonal gammopathy of undetermined signific...</td>
+<td>Monoclonal gammopathy of undetermined signific...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">multiple_sclerosis</td>
+<td>Multiple sclerosis</td>
+<td>Multiple sclerosis (8A40) reported at time of ...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">myasthenia_gravis</td>
+<td>Myasthenia gravis</td>
+<td>Myasthenia gravis (8C60) reported at time of v...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">mycosis_fungoides</td>
+<td>Mycosis fungoides</td>
+<td>Mycosis fungoides (2B01) reported at time of v...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">myeloid_or_lymphoid_neoplasm_with_pcm1jak2</td>
+<td>Myeloid or lymphoid neoplasm with PCM1JAK2</td>
+<td>Myeloid or lymphoid neoplasm with PCM1JAK2 (XH...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">myocarditis</td>
+<td>Myocarditis</td>
+<td>Myocarditis (BC42) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">myopia</td>
+<td>Myopia</td>
+<td>Myopia (9D00.0) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">neoplastic_haemangioma_of_other_specified_site</td>
+<td>Neoplastic haemangioma of other specified site</td>
+<td>Neoplastic haemangioma of other specified site...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">neutropaenia</td>
+<td>Neutropaenia</td>
+<td>Neutropaenia (4B00.0) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">nonalcoholic_fatty_liver_disease</td>
+<td>Nonalcoholic fatty liver disease</td>
+<td>Nonalcoholic fatty liver disease (DB92) report...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">nonalcoholic_steatohepatitis</td>
+<td>Nonalcoholic steatohepatitis</td>
+<td>Nonalcoholic steatohepatitis (DB92.1) reported...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">nonfamilial_nongenetic_cystic_kidney_disease</td>
+<td>Nonfamilial nongenetic cystic kidney disease</td>
+<td>Nonfamilial nongenetic cystic kidney disease (...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">nonsecreting_pituitary_adenoma</td>
+<td>Nonsecreting pituitary adenoma</td>
+<td>Nonsecreting pituitary adenoma (2F37.0) report...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">nontoxic_goitre</td>
+<td>Nontoxic goitre</td>
+<td>Nontoxic goitre (5A01) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">nontoxic_multinodular_goitre</td>
+<td>Nontoxic multinodular goitre</td>
+<td>Nontoxic multinodular goitre (5A01.2) reported...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">nontoxic_single_thyroid_nodule</td>
+<td>Nontoxic single thyroid nodule</td>
+<td>Nontoxic single thyroid nodule (5A01.1) report...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">obesity</td>
+<td>Obesity</td>
+<td>Obesity (5B81) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">obsessivecompulsive_disorder</td>
+<td>Obsessivecompulsive disorder</td>
+<td>Obsessivecompulsive disorder (6B20) reported a...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">obstructive_or_reflux_nephropathy</td>
+<td>Obstructive or reflux nephropathy</td>
+<td>Obstructive or reflux nephropathy (GB56) repor...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">obstructive_sleep_apnoea</td>
+<td>Obstructive sleep apnoea</td>
+<td>Obstructive sleep apnoea (7A41) reported at ti...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">ocular_hypertension</td>
+<td>Ocular hypertension</td>
+<td>Ocular hypertension (9C61.01) reported at time...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">oesophagitis</td>
+<td>Oesophagitis</td>
+<td>Oesophagitis (DA24) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">oral_aphthae_or_aphthalike_ulceration</td>
+<td>Oral aphthae or aphthalike ulceration</td>
+<td>Oral aphthae or aphthalike ulceration (DA01.10...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">osteoarthritis_of_hip</td>
+<td>Osteoarthritis of hip</td>
+<td>Osteoarthritis of hip (FA00) reported at time ...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">osteopenia</td>
+<td>Osteopenia</td>
+<td>Osteopenia (FB83.0) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">osteoporosis</td>
+<td>Osteoporosis</td>
+<td>Osteoporosis (FB83.1) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">other_acquired_deformities_of_limbs</td>
+<td>Other acquired deformities of limbs</td>
+<td>Other acquired deformities of limbs (FA31) rep...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">other_or_unspecified_ovarian_cysts</td>
+<td>Other or unspecified ovarian cysts</td>
+<td>Other or unspecified ovarian cysts (GA18.6) re...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">other_specified_acquired_abnormalities_of_uterus_except_cervix</td>
+<td>Other specified acquired abnormalities of uter...</td>
+<td>Other specified acquired abnormalities of uter...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">other_specified_conditions_associated_with_the_spine_intervertebral_disc_displacement</td>
+<td>Other specified conditions associated with the...</td>
+<td>Other specified conditions associated with the...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">other_specified_degeneration_of_macula_or_posterior_pole</td>
+<td>Other specified degeneration of macula or post...</td>
+<td>Other specified degeneration of macula or post...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">other_specified_diseases_of_vocal_cords_or_larynx_not_elsewhere_classified</td>
+<td>Other specified diseases of vocal cords or lar...</td>
+<td>Other specified diseases of vocal cords or lar...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">other_specified_disorders_of_glucose_regulation_and_pancreatic_internal_secretion</td>
+<td>Other specified disorders of glucose regulatio...</td>
+<td>Other specified disorders of glucose regulatio...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">other_specified_hereditary_thrombophilia</td>
+<td>Other specified hereditary thrombophilia</td>
+<td>Other specified hereditary thrombophilia (3B61...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">other_specified_ischaemic_infarction_of_muscle</td>
+<td>Other specified ischaemic infarction of muscle</td>
+<td>Other specified ischaemic infarction of muscle...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">other_specified_malignant_neoplasms_of_colon</td>
+<td>Other specified malignant neoplasms of colon</td>
+<td>Other specified malignant neoplasms of colon (...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">otosclerosis</td>
+<td>Otosclerosis</td>
+<td>Otosclerosis (AB33) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">overactive_bladder</td>
+<td>Overactive bladder</td>
+<td>Overactive bladder (GC50.0) reported at time o...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">overweight</td>
+<td>Overweight</td>
+<td>Overweight (5B80.0) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">panic_disorder</td>
+<td>Panic disorder</td>
+<td>Panic disorder (6B01) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">parkinsonism</td>
+<td>Parkinsonism</td>
+<td>Parkinsonism (8A00) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">pelvic_hernia</td>
+<td>Pelvic hernia</td>
+<td>Pelvic hernia (DD50.1) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">perforation_of_tympanic_membrane</td>
+<td>Perforation of tympanic membrane</td>
+<td>Perforation of tympanic membrane (AB13) report...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">pericardial_effusion</td>
+<td>Pericardial effusion</td>
+<td>Pericardial effusion (BB25) reported at time o...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">personal_history_of_allergy_other_than_to_drugs_or_biological_substances</td>
+<td>Personal history of allergy other than to drug...</td>
+<td>Personal history of allergy other than to drug...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">personal_history_of_allergy_to_drugs_medicaments_or_biological_substances</td>
+<td>Personal history of allergy to drugs medicamen...</td>
+<td>Personal history of allergy to drugs medicamen...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">pityriasis_versicolor</td>
+<td>Pityriasis versicolor</td>
+<td>Pityriasis versicolor (1F2D.0) reported at tim...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">plantar_fasciitis</td>
+<td>Plantar fasciitis</td>
+<td>Plantar fasciitis (FB40.1) reported at time of...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">pneumonia</td>
+<td>Pneumonia</td>
+<td>Pneumonia (CA40) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">polycystic_ovary_syndrome</td>
+<td>Polycystic ovary syndrome</td>
+<td>Polycystic ovary syndrome (5A80.1) reported at...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">polycythaemia_vera</td>
+<td>Polycythaemia vera</td>
+<td>Polycythaemia vera (2A20.4) reported at time o...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">polymyalgia_rheumatica</td>
+<td>Polymyalgia rheumatica</td>
+<td>Polymyalgia rheumatica (FA22) reported at time...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">polyp_of_gallbladder</td>
+<td>Polyp of gallbladder</td>
+<td>Polyp of gallbladder (DC10.3) reported at time...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">polyposis_syndrome</td>
+<td>Polyposis syndrome</td>
+<td>Polyposis syndrome (2E92.40) reported at time ...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">post_traumatic_stress_disorder</td>
+<td>Post traumatic stress disorder</td>
+<td>Post traumatic stress disorder (6B40) reported...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">postviral_fatigue_syndrome</td>
+<td>Postviral fatigue syndrome</td>
+<td>Postviral fatigue syndrome (8E49) reported at ...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">preeclampsia</td>
+<td>Preeclampsia</td>
+<td>Preeclampsia (JA24) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">pregnant_state</td>
+<td>Pregnant state</td>
+<td>Pregnant state (QA41) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">presbyopia</td>
+<td>Presbyopia</td>
+<td>Presbyopia (9D00.3) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">primary_hypercholesterolaemia</td>
+<td>Primary hypercholesterolaemia</td>
+<td>Primary hypercholesterolaemia (5C80.00) report...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">prostate_specific_antigen_positive</td>
+<td>Prostate specific antigen positive</td>
+<td>Prostate specific antigen positive (MA14.1) re...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">proteinuria</td>
+<td>Proteinuria</td>
+<td>Proteinuria (MF96) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">psoriasis</td>
+<td>Psoriasis</td>
+<td>Psoriasis (EA90) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">pterygium</td>
+<td>Pterygium</td>
+<td>Pterygium (9A61.1) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">pulmonary_thromboembolism</td>
+<td>Pulmonary thromboembolism</td>
+<td>Pulmonary thromboembolism (BB00) reported at t...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">radial_styloid_tenosynovitis</td>
+<td>Radial styloid tenosynovitis</td>
+<td>Radial styloid tenosynovitis (FB40.5) reported...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">raynaud_phenomenon</td>
+<td>Raynaud phenomenon</td>
+<td>Raynaud phenomenon (BD42) reported at time of ...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">rectal_prolapse</td>
+<td>Rectal prolapse</td>
+<td>Rectal prolapse (DB31.2) reported at time of v...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">recurrent_pregnancy_loss</td>
+<td>Recurrent pregnancy loss</td>
+<td>Recurrent pregnancy loss (GA33) reported at ti...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">restless_legs_syndrome</td>
+<td>Restless legs syndrome</td>
+<td>Restless legs syndrome (7A80) reported at time...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">retinal_detachments_or_breaks</td>
+<td>Retinal detachments or breaks</td>
+<td>Retinal detachments or breaks (9B73) reported ...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">retinal_oedema</td>
+<td>Retinal oedema</td>
+<td>Retinal oedema (9B78.7) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">retinal_venous_occlusions</td>
+<td>Retinal venous occlusions</td>
+<td>Retinal venous occlusions (9B74.1) reported at...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">rheumatic_heart_disease_unspecified</td>
+<td>Rheumatic heart disease unspecified</td>
+<td>Rheumatic heart disease unspecified (BC20.1) r...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">rheumatoid_arthritis</td>
+<td>Rheumatoid arthritis</td>
+<td>Rheumatoid arthritis (FA20) reported at time o...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">rosacea</td>
+<td>Rosacea</td>
+<td>Rosacea (ED90.0) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">rupture_of_achilles_tendon</td>
+<td>Rupture of Achilles tendon</td>
+<td>Rupture of Achilles tendon (NC96.02) reported ...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">sarcoidosis</td>
+<td>Sarcoidosis</td>
+<td>Sarcoidosis (4B20) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">scoliosis</td>
+<td>Scoliosis</td>
+<td>Scoliosis (FA70.1) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">scrotal_varices</td>
+<td>Scrotal varices</td>
+<td>Scrotal varices (BD75.1) reported at time of v...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">seborrhoeic_dermatitis_and_related_conditions</td>
+<td>Seborrhoeic dermatitis and related conditions</td>
+<td>Seborrhoeic dermatitis and related conditions ...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">simple_renal_cyst</td>
+<td>Simple renal cyst</td>
+<td>Simple renal cyst (GB80.0) reported at time of...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">sjgren_syndrome</td>
+<td>Sjgren syndrome</td>
+<td>Sjgren syndrome (4A43.2) reported at time of v...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">social_anxiety_disorder</td>
+<td>Social anxiety disorder</td>
+<td>Social anxiety disorder (6B04) reported at tim...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">spinal_muscular_atrophy</td>
+<td>Spinal muscular atrophy</td>
+<td>Spinal muscular atrophy (8B61) reported at tim...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">spinal_pain</td>
+<td>Spinal pain</td>
+<td>Spinal pain (ME84) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">spinal_stenosis</td>
+<td>Spinal stenosis</td>
+<td>Spinal stenosis (FA82) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">spondylolisthesis</td>
+<td>Spondylolisthesis</td>
+<td>Spondylolisthesis (FA84) reported at time of v...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">spondylolysis</td>
+<td>Spondylolysis</td>
+<td>Spondylolysis (FA81) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">squamous_cell_carcinoma_of_skin</td>
+<td>Squamous cell carcinoma of skin</td>
+<td>Squamous cell carcinoma of skin (2C31) reporte...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">stroke_not_known_if_ischaemic_or_haemorrhagic</td>
+<td>Stroke not known if ischaemic or haemorrhagic</td>
+<td>Stroke not known if ischaemic or haemorrhagic ...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">structural_developmental_anomaly_of_heart_or_great_vessels_unspecified</td>
+<td>Structural developmental anomaly of heart or g...</td>
+<td>Structural developmental anomaly of heart or g...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">syncope_and_collapse</td>
+<td>Syncope and collapse</td>
+<td>Syncope and collapse (MG45) reported at time o...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">syndromes_with_connective_tissue_involvement_as_a_major_feature</td>
+<td>Syndromes with connective tissue involvement a...</td>
+<td>Syndromes with connective tissue involvement a...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">systemic_sclerosis</td>
+<td>Systemic sclerosis</td>
+<td>Systemic sclerosis (4A42) reported at time of ...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">tachycardia_unspecified</td>
+<td>Tachycardia unspecified</td>
+<td>Tachycardia unspecified (MC81.0) reported at t...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">tear_of_meniscus_current</td>
+<td>Tear of meniscus current</td>
+<td>Tear of meniscus current (NC93.3) reported at ...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">tenosynovitis</td>
+<td>Tenosynovitis</td>
+<td>Tenosynovitis (FB40) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">testicular_dysfunction_or_testosteronerelated_disorders</td>
+<td>Testicular dysfunction or testosteronerelated ...</td>
+<td>Testicular dysfunction or testosteronerelated ...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">thalassaemias</td>
+<td>Thalassaemias</td>
+<td>Thalassaemias (3A50) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">thoracic_outlet_syndrome_due_to_cervical_rib</td>
+<td>Thoracic outlet syndrome due to cervical rib</td>
+<td>Thoracic outlet syndrome due to cervical rib (...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">thrombocytosis</td>
+<td>Thrombocytosis</td>
+<td>Thrombocytosis (3B63) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">thrombophilia</td>
+<td>Thrombophilia</td>
+<td>Thrombophilia (3B61) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">thrombotic_thrombocytopenic_purpura</td>
+<td>Thrombotic thrombocytopenic purpura</td>
+<td>Thrombotic thrombocytopenic purpura (3B64.14) ...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">thyroiditis</td>
+<td>Thyroiditis</td>
+<td>Thyroiditis (5A03) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">thyrotoxicosis</td>
+<td>Thyrotoxicosis</td>
+<td>Thyrotoxicosis (5A02) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">thyrotoxicosis_with_diffuse_goitre</td>
+<td>Thyrotoxicosis with diffuse goitre</td>
+<td>Thyrotoxicosis with diffuse goitre (5A02.0) re...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">tinnitus</td>
+<td>Tinnitus</td>
+<td>Tinnitus (MC41) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">transient_ischaemic_attack</td>
+<td>Transient ischaemic attack</td>
+<td>Transient ischaemic attack (8B10) reported at ...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">trigeminal_neuralgia</td>
+<td>Trigeminal neuralgia</td>
+<td>Trigeminal neuralgia (8B82.0) reported at time...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">type_1_diabetes_mellitus</td>
+<td>Type 1 diabetes mellitus</td>
+<td>Type 1 diabetes mellitus (5A10) reported at ti...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">type_2_diabetes_mellitus</td>
+<td>Type 2 diabetes mellitus</td>
+<td>Type 2 diabetes mellitus (5A11) reported at ti...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">ulcerative_colitis</td>
+<td>Ulcerative colitis</td>
+<td>Ulcerative colitis (DD71) reported at time of ...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">upper_limb_deep_vein_thrombosis</td>
+<td>Upper limb deep vein thrombosis</td>
+<td>Upper limb deep vein thrombosis (BD71.0) repor...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">urinary_incontinence</td>
+<td>Urinary incontinence</td>
+<td>Urinary incontinence (MF50.2) reported at time...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">urinary_tract_infection_site_and_agent_not_specified</td>
+<td>Urinary tract infection site and agent not spe...</td>
+<td>Urinary tract infection site and agent not spe...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">urolithiasis_unspeciefied</td>
+<td>Urolithiasis unspeciefied</td>
+<td>Urolithiasis unspeciefied (GB7Z) reported at t...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">urticaria_of_unspecified_type</td>
+<td>Urticaria of unspecified type</td>
+<td>Urticaria of unspecified type (EB05) reported ...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">uterovaginal_prolapse</td>
+<td>Uterovaginal prolapse</td>
+<td>Uterovaginal prolapse (GC40.3) reported at tim...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">varicose_veins_with_great_saphenous_reflux</td>
+<td>Varicose veins with great saphenous reflux</td>
+<td>Varicose veins with great saphenous reflux (BD...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">vasculitis</td>
+<td>Vasculitis</td>
+<td>Vasculitis (4A44) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">venous_complications_in_pregnancy</td>
+<td>Venous complications in pregnancy</td>
+<td>Venous complications in pregnancy (JA42.0) rep...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">ventricular_premature_depolarization</td>
+<td>Ventricular premature depolarization</td>
+<td>Ventricular premature depolarization (BC70) re...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">ventricular_tachyarrhythmia</td>
+<td>Ventricular tachyarrhythmia</td>
+<td>Ventricular tachyarrhythmia (BC71) reported at...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">vitamin_b12_deficiency</td>
+<td>Vitamin B12 deficiency</td>
+<td>Vitamin B12 deficiency (5B5F) reported at time...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">vitamin_d_deficiency</td>
+<td>Vitamin D deficiency</td>
+<td>Vitamin D deficiency (5B57) reported at time o...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">vitiligo</td>
+<td>Vitiligo</td>
+<td>Vitiligo (ED63.0) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">whooping_cough_due_to_bordetella_pertussis</td>
+<td>Whooping cough due to Bordetella pertussis</td>
+<td>Whooping cough due to Bordetella pertussis (1C...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">wilson_disease</td>
+<td>Wilson disease</td>
+<td>Wilson disease (5C64.00) reported at time of v...</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">zoster</td>
+<td>Zoster</td>
+<td>Zoster (1E91) reported at time of visit</td>
+<td>NaN</td>
+<td>medical_conditions.parquet</td>
+<td>Categorical (single)</td>
+<td>None</td>
+<td>NaN</td>
+<td>Data</td>
+<td>No</td>
+<td>10K</td>
+<td>Tabular</td>
+<td>2019-01-29</td>
+<td>bool</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
